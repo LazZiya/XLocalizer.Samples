@@ -78,13 +78,13 @@ namespace XmlLocalizationSample
                     ops.AutoAddKeys = true;
 
                     // Recommendation:
-                    // To avoid extra process time/cost required by online translation,
-                    // enable auto translate option after fixing texts inside the application.
+                    // To avoid extra process power/time/cost required by online translation;
+                    // Enable auto translate option after fixing texts inside the application.
                     ops.AutoTranslate = true;
-                    
+
                     // Recommendation: 
-                    // Keep caching off during development to avoid caching temporary 
-                    // values that are subject to change.
+                    // To avoid caching temporary values that are subject to change;
+                    // Keep caching off during development.
                     ops.UseExpressMemoryCache = false; 
                 });
         }
