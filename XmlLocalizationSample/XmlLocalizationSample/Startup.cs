@@ -80,6 +80,7 @@ namespace XmlLocalizationSample
                     // Recommendation:
                     // To avoid extra process power/time/cost required by online translation;
                     // Enable auto translate option after fixing texts inside the application.
+                    // + enable AutoAddKeys with AutoTranslate.
                     ops.AutoTranslate = true;
 
                     // Recommendation: 

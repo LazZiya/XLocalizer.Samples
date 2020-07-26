@@ -6,6 +6,10 @@
     <title><localize>@ViewData["Title"]</localize> - XLocalizer XML Sample</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    @if (System.Globalization.CultureInfo.CurrentCulture.TextInfo.IsRightToLeft)
+    {
+        <link rel="stylesheet" href="~/css/rtl.css" />
+    }
 </head>
 <body>
     <header>
