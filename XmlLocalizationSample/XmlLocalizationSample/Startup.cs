@@ -48,8 +48,10 @@ namespace XmlLocalizationSample
                 // Optional: add custom provider to support localization based on route value {culture}
                 ops.RequestCultureProviders.Insert(0, new RouteSegmentRequestCultureProvider(cultures));
             });
-            
-            // Optional: To enable online translation register one or more translation services
+
+            // Optional: To enable online translation register one or more translation services.
+            // Then add API Keys to user secrets file.
+            // For more details see: http://docs.ziyad.info/XLocalizer/translate-services.md
             services.AddSingleton<ITranslator, IBMWatsonTranslateService>();
             services.AddHttpClient<ITranslator, YandexTranslateService>();
             services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
