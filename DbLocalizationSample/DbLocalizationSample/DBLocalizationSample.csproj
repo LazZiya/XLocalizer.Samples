@@ -22,7 +22,10 @@
     <PackageReference Include="XLocalizer.DB" Version="1.0.0-preview2" />
     <PackageReference Include="XLocalizer.DB.UI" Version="1.0.0-preview2" />
     <PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0-preview1" />
+    <PackageReference Include="XLocalizer.Translate.GoogleTranslate" Version="1.0.0-preview1" />
     <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-preview1" />
+    <PackageReference Include="XLocalizer.Translate.SystranTranslate" Version="1.0.0-preview1" />
+    <PackageReference Include="XLocalizer.Translate.YandexTranslate" Version="1.0.0-preview1" />
   </ItemGroup>
 
   <ItemGroup>

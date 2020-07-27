@@ -14,7 +14,6 @@ using System.Globalization;
 using XLocalizer.Routing;
 using XmlLocalizationSample.LocalizationResources;
 using XLocalizer.Translate.GoogleTranslate;
-using XLocalizer.Translate.IBMWatsonTranslate;
 using XLocalizer.Translate.SystranTranslate;
 using XLocalizer.Translate.YandexTranslate;
 
@@ -52,7 +51,6 @@ namespace XmlLocalizationSample
             // Optional: To enable online translation register one or more translation services.
             // Then add API Keys to user secrets file.
             // For more details see: http://docs.ziyad.info/XLocalizer/translate-services.md
-            services.AddSingleton<ITranslator, IBMWatsonTranslateService>();
             services.AddHttpClient<ITranslator, YandexTranslateService>();
             services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
             services.AddHttpClient<ITranslator, GoogleTranslateService>();

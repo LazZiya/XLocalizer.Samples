@@ -18,6 +18,9 @@ using System.Globalization;
 using XLocalizer.Routing;
 using XLocalizer;
 using XLocalizer.DB;
+using XLocalizer.Translate.YandexTranslate;
+using XLocalizer.Translate.GoogleTranslate;
+using XLocalizer.Translate.SystranTranslate;
 
 namespace DBLocalizationSample
 {
@@ -50,7 +53,13 @@ namespace DBLocalizationSample
                 ops.RequestCultureProviders.Insert(0, new RouteSegmentRequestCultureProvider(cultures));
             });
 
+            // Optional: To enable online translation register one or more translation services.
+            // Then add API Keys to user secrets file.
+            // For more details see: http://docs.ziyad.info/XLocalizer/translate-services.md
+            services.AddHttpClient<ITranslator, YandexTranslateService>();
             services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
+            services.AddHttpClient<ITranslator, GoogleTranslateService>();
+            services.AddHttpClient<ITranslator, SystranTranslateService>();
 
             services.AddRazorPages()
                 .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); })
