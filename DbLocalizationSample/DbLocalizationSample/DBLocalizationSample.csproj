@@ -1,9 +1,14 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
-    <UserSecretsId>aspnet-XmlLocalizationSample-95C0CA52-055D-41E2-83E1-E63AB482C6D4</UserSecretsId>
+    <UserSecretsId>aspnet-DBLocalizationSample-BCB627AF-314D-4761-92FC-C200B7B65A29</UserSecretsId>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200727080958_XLocalizerStores.cs" />
+    <Compile Remove="Data\Migrations\20200727080958_XLocalizerStores.Designer.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="LazZiya.TagHelpers" Version="5.0.0-preview1" />
@@ -12,15 +17,16 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.0-preview.7.20365.19" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-preview.7.20365.15" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-preview.7.20365.15" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-preview.6.20323.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-preview.7.20370.3" />
     <PackageReference Include="XLocalizer" Version="1.0.0-preview2" />
+    <PackageReference Include="XLocalizer.DB" Version="1.0.0-preview2" />
+    <PackageReference Include="XLocalizer.DB.UI" Version="1.0.0-preview2" />
     <PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0-preview1" />
-    <PackageReference Include="XLocalizer.Translate" Version="1.0.0-preview1" />
-    <PackageReference Include="XLocalizer.Translate.GoogleTranslate" Version="1.0.0-preview1" />
-    <PackageReference Include="XLocalizer.Translate.IBMWatsonTranslate" Version="1.0.0-preview1" />
     <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-preview1" />
-    <PackageReference Include="XLocalizer.Translate.SystranTranslate" Version="1.0.0-preview1" />
-    <PackageReference Include="XLocalizer.Translate.YandexTranslate" Version="1.0.0-preview1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="LocalizationResources\" />
   </ItemGroup>
 
 </Project>

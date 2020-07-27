@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30317.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbLocalizationSample", "DbLocalizationSample\DbLocalizationSample.csproj", "{51E421FB-19D8-4B4A-8849-854BD6B736D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51E421FB-19D8-4B4A-8849-854BD6B736D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51E421FB-19D8-4B4A-8849-854BD6B736D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51E421FB-19D8-4B4A-8849-854BD6B736D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51E421FB-19D8-4B4A-8849-854BD6B736D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D33A7044-BD96-465E-841C-6F9D9FB0CFB1}
+	EndGlobalSection
+EndGlobal

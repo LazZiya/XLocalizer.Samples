@@ -1,0 +1,33 @@
+﻿@page
+@model DBLocalizationSample.Pages.ModelBindingTestModel
+@{
+    ViewData["Title"] = "Model Binding Errors";
+    var args = new object[] { "Model Binding", "https://docs.microsoft.com/en-us/aspnet/core/mvc/models/model-binding?view=aspnetcore-5.0" };
+}
+
+<h1 localize-args="args">Localized {0} Errors</h1>
+
+<alert-light dismissable="false">
+    <localize localize-args="args">
+        To see localized {0} errors run below steps:
+        <ul>
+            <li>Submit the form without typing any value.</li>
+            <li>Submit the form with a string value, e.g.: "A".</li>
+            <li>Submit the form with a number.</li>
+        </ul>
+        <p>Read more about <a href="{1}">{0} in Asp.Net Core</a></p>
+    </localize>
+</alert-light>
+
+<div class="container">
+    <form method="post">
+        <div class="form-group">
+            <label asp-for="Number"></label>
+            <input name="Number" type="text" class="form-control" localize-att-placeholder="Age" />
+            <span class="text-danger" asp-validation-for="Number"></span>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary" localize-content>OK</button>
+        </div>
+    </form>
+</div>
