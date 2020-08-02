@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="data" maxOccurs="unbounded" minOccurs="0">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="key">
+                  <xsd:complexType>
+                    <xsd:simpleContent>
+                      <xsd:extension base="xsd:string">
+                        <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+                      </xsd:extension>
+                    </xsd:simpleContent>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element type="xsd:string" name="value" />
+                <xsd:element type="xsd:string" name="comment" />
+              </xsd:sequence>
+              <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data isActive="false">
+    <key>Welcome</key>
+    <value>مرحبا</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>&lt;p&gt;Learn about &lt;a href="{0}"&gt; building Web apps with ASP.NET Core&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Learn about &lt;a href="{1}"&gt; XLocalizer for ASP.NET Core&lt;/a&gt;.&lt;/p&gt;</key>
+    <value>&lt;p style=";text-align:right;direction:rtl"&gt; تعرف على كيفية &lt;a href="{0}"&gt;إنشاء تطبيقات الويب باستخدام ASP.NET Core&lt;/a&gt; . &lt;/p&gt;&lt;p style=";text-align:right;direction:rtl"&gt; تعرف على &lt;a href="{1}"&gt;XLocalizer لـ ASP.NET Core&lt;/a&gt; . &lt;/p&gt;</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Home page</key>
+    <value>الصفحة الرئيسية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Register</key>
+    <value>تسجيل</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Login</key>
+    <value>تسجيل الدخول</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Home</key>
+    <value>الرئيسية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Privacy</key>
+    <value>خصوصية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Localized {0} Errors</key>
+    <value>أخطاء {0} مترجمة</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Export Resources</key>
+    <value>موارد التصدير</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Privacy Policy</key>
+    <value>سياسة الخصوصية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use this page to detail your site's privacy policy.</key>
+    <value>استخدم هذه الصفحة لتفصيل سياسة الخصوصية الخاصة بموقعك.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>To see localized {0} errors run below steps: &lt;ul&gt; &lt;li&gt;Submit the form without typing any value.&lt;/li&gt; &lt;li&gt;Submit the form with a string value, e.g.: "A".&lt;/li&gt; &lt;li&gt;Submit the form with a number.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Read more about &lt;a href="{1}"&gt;{0} in Asp.Net Core&lt;/a&gt;&lt;/p&gt;</key>
+    <value>لرؤية أخطاء {0} مترجمة ، اتبع الخطوات التالية: &lt;ul style=";text-align:right;direction:rtl"&gt;&lt;li style=";text-align:right;direction:rtl"&gt; أرسل النموذج دون كتابة أي قيمة. &lt;/li&gt;&lt;li style=";text-align:right;direction:rtl"&gt; أرسل النموذج بقيمة سلسلة ، مثل: &amp;quot;A&amp;quot;. &lt;/li&gt;&lt;li style=";text-align:right;direction:rtl"&gt; أرسل النموذج برقم. &lt;/li&gt;&lt;/ul&gt;&lt;p style=";text-align:right;direction:rtl"&gt; اقرأ المزيد عن &lt;a href="{1}"&gt;{0} في Asp.Net Core&lt;/a&gt; &lt;/p&gt;</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>What is your age?</key>
+    <value>كم عمرك؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Age</key>
+    <value>سنك</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>OK</key>
+    <value>موافق</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Model Binding Errors</key>
+    <value>أخطاء ربط النموذج</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The value '{0}' is invalid.</key>
+    <value>القيمة غير صالحة.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The value '{0}' is not valid for {1}.</key>
+    <value>القيمة &amp;quot;{0}&amp;quot; غير صالحة لـ {1}.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Resource Exporter</key>
+    <value>مصدر الموارد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use this exporter if to export all resources from ".xml" to ".resx" files.</key>
+    <value>استخدم هذا المصدر إذا كان لتصدير جميع الموارد من ملفات &amp;quot;.xml&amp;quot; إلى &amp;quot;.resx&amp;quot;.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>&lt;h3&gt;Important Notice!&lt;/h3&gt; &lt;p&gt;After exporting the resources from ".xml" to ".resx", the application will restart at the first request.&lt;/p&gt; &lt;p&gt;That is because the application needs to compile ".resx" files into binary format ".resources".&lt;/p&gt;</key>
+    <value>&lt;h3 style=";text-align:right;direction:rtl"&gt; ملاحظة هامة! &lt;/h3&gt;&lt;p style=";text-align:right;direction:rtl"&gt; بعد تصدير الموارد من &amp;quot;.xml&amp;quot; إلى &amp;quot;.resx&amp;quot; ، سيتم إعادة تشغيل التطبيق عند الطلب الأول. &lt;/p&gt;&lt;p style=";text-align:right;direction:rtl"&gt; وذلك لأن التطبيق يحتاج إلى ترجمة ملفات &amp;quot;.resx&amp;quot; إلى تنسيق ثنائي &amp;quot;.resources&amp;quot;. &lt;/p&gt;</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Export approved resources only.</key>
+    <value>تصدير الموارد المعتمدة فقط.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Export all resources.</key>
+    <value>تصدير جميع الموارد.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Don't overwrite existing resources.</key>
+    <value>لا تستبدل الموارد الموجودة.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Overwrite existing resources.</key>
+    <value>استبدال الموارد الموجودة.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Select culture to export</key>
+    <value>حدد الثقافة للتصدير</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Close</key>
+    <value>إغلاق</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Export</key>
+    <value>تصدير</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Create a new account.</key>
+    <value>إنشاء حساب جديد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Email</key>
+    <value>البريد الإلكتروني</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is required.</key>
+    <value>هذا الحقل مطلوب.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is not a valid e-mail address.</key>
+    <value>الحقل {0} ليس عنوان بريد إلكتروني صالح.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Password</key>
+    <value>كلمة المرور</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The field {0} must be a string with a maximum length of {1}.</key>
+    <value>يجب أن يكون الحقل {0} سلسلة بحد أقصى للطول {1}.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Confirm password</key>
+    <value>تأكيد كلمة المرور</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>'{0}' and '{1}' do not match.</key>
+    <value>لا يتطابق &amp;#39;{0}&amp;#39; و &amp;#39;{1}&amp;#39;.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use another service to register.</key>
+    <value>استخدم خدمة أخرى للتسجيل.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>There are no external authentication services configured. See &lt;a href="{0}"&gt;this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services.</key>
+    <value>لم يتم تكوين خدمات مصادقة خارجية. راجع &lt;a href="{0}"&gt;هذه المقالة&lt;/a&gt; للحصول على تفاصيل حول إعداد تطبيق ASP.NET هذا لدعم تسجيل الدخول عبر الخدمات الخارجية.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Log in</key>
+    <value>تسجيل دخول</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use a local account to log in.</key>
+    <value>استخدم حساب محلي لتسجيل الدخول.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Remember me?</key>
+    <value>تذکرني؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Forgot your password?</key>
+    <value>نسيت كلمة المرور؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Register as a new user</key>
+    <value>تسجيل مستخدم جديد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Resend email confirmation</key>
+    <value>إعادة إرسال تأكيد البريد الإلكتروني</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use another service to log in.</key>
+    <value>استخدم خدمة أخرى لتسجيل الدخول.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>There are no external authentication services configured. See &lt;a href="{0}"&gt; this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services.</key>
+    <value>لم يتم تكوين خدمات مصادقة خارجية. راجع &lt;a href="{0}"&gt;هذه المقالة&lt;/a&gt; للحصول على تفاصيل حول إعداد تطبيق ASP.NET هذا لدعم تسجيل الدخول عبر الخدمات الخارجية.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+</root>
