@@ -1,0 +1,33 @@
+﻿@inject NavigationManager NavigationManager
+
+<select @onchange="OnSelected" class="form-control col-2">
+    @foreach (var c in SupportedCultures)
+    {
+        var culture = System.Globalization.CultureInfo.GetCultureInfo(c);
+        if (CurrentCultureName == c)
+        {
+            <option value="@c" selected>@culture.EnglishName</option>
+        }
+        else
+        {
+
+            <option value="@c">@culture.EnglishName</option>
+        }
+    }
+</select>
+
+@code {
+    private void OnSelected(ChangeEventArgs e)
+    {
+        var culture = (string)e.Value;
+        var uri = new Uri(NavigationManager.Uri)
+            .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
+        var query = $"?culture={Uri.EscapeDataString(culture)}&" +
+            $"redirectUri={Uri.EscapeDataString(uri)}";
+
+        NavigationManager.NavigateTo("/Culture/SetCulture" + query, forceLoad: true);
+    }
+
+    private string CurrentCultureName = System.Globalization.CultureInfo.CurrentCulture.Name;
+    private string[] SupportedCultures = { "en", "tr", "ar" };
+}

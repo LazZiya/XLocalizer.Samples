@@ -1,8 +1,9 @@
-XML Localization Sample
+Blazor Localization Sample
 
-This sample code demonstrates localization with XLocalizer based on XML resource files.
+This sample code demonstrates Blazor localization with XLocalizer based on XML resource files.
 
-Before running the project make sure that you have added necessary API keys to user secrets as described here:
+Before running the project make sure that you have added RapidAPI key to user secrets as described here:
+
 
 {
   "XLocalizer.Translate": {

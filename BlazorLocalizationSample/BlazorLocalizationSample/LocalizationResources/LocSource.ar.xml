@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="data" maxOccurs="unbounded" minOccurs="0">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="key">
+                  <xsd:complexType>
+                    <xsd:simpleContent>
+                      <xsd:extension base="xsd:string">
+                        <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+                      </xsd:extension>
+                    </xsd:simpleContent>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element type="xsd:string" name="value" />
+                <xsd:element type="xsd:string" name="comment" />
+              </xsd:sequence>
+              <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data isActive="false">
+    <key>About</key>
+    <value>نبذة عن</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Hello, world!</key>
+    <value>مرحبا بالعالم!</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Welcome to your new app.</key>
+    <value>مرحباً بك في تطبيقك الجديد.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Home</key>
+    <value>الرئيسية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Counter</key>
+    <value>عداد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Fetch data</key>
+    <value>جلب البيانات</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>How is Blazor working for you?</key>
+    <value>كيف يعمل بلازور لديك؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Please take our</key>
+    <value>يرجى اتخاذ لدينا</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>brief survey</key>
+    <value>نَظْرَة (عامّة أو شامِلَة) ; لَمْحَة ; مُلَخّص</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>and tell us what you think.</key>
+    <value>أعطنا رأيك...</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Learn about</key>
+    <value>اقرأ المزيد حول</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>XLocalizer for Asp.Net Core</key>
+    <value>XLocalizer Asp.Net</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>An unhandled exception has occurred. See browser dev tools for details.</key>
+    <value>حدث استثناء غير معالج. راجع أدوات التطوير للمستعرض للحصول على التفاصيل.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Reload</key>
+    <value>إعادة تحميل</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Current count: {0}</key>
+    <value>العدد الحالي</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Click me</key>
+    <value>عند النقر</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Weather forecast</key>
+    <value>معلومات عن الطقس</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>This component demonstrates fetching data from a service.</key>
+    <value>يوضح هذا المكون جلب البيانات من خدمة.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Date</key>
+    <value>التاريخ</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Temp. (C)</key>
+    <value>درجة الحرارة المئوية</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Temp. (F)</key>
+    <value>Temp. (واو)</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Summary</key>
+    <value>الملخص</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Sweltering</key>
+    <value>قائِظ</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Mild</key>
+    <value>معتدل أو بسيط (التخلف)</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Cool</key>
+    <value>لطيف</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+</root>

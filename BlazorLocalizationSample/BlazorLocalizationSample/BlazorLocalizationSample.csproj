@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>e3882ea5-40c8-4693-bbba-1fb86898eb31</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="XLocalizer" Version="1.0.0-preview2" />
+    <PackageReference Include="XLocalizer.Translate" Version="1.0.0-preview2" />
+    <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-preview1" />
+  </ItemGroup>
+
+</Project>
