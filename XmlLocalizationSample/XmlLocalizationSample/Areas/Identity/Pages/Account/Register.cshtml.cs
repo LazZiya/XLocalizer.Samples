@@ -55,7 +55,7 @@ namespace XmlLocalizationSample.Areas.Identity.Pages.Account
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
+            [ExRequired]
             [ExStringLength(100, MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]

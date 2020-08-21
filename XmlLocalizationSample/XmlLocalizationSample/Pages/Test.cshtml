@@ -1,0 +1,30 @@
+﻿@page
+@model XmlLocalizationSample.Pages.TestModel
+@{
+}
+
+<form>
+    <div class="form-group">
+        <label asp-for="Min"></label>
+        <input asp-for="Min" class="form-control" />
+        <span asp-validation-for="Min" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Max"></label>
+        <input asp-for="Max" class="form-control" />
+        <span asp-validation-for="Max" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Range"></label>
+        <input asp-for="Range" class="form-control" />
+        <span asp-validation-for="Range" class="text-danger"></span>
+    </div>
+    <input type="button" class="btn btn-primary" localize-att-value="Submit" />
+
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

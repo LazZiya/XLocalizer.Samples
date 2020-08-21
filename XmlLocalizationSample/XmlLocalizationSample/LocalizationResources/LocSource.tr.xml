@@ -169,7 +169,7 @@
   </data>
   <data isActive="false">
     <key>The {0} field is required.</key>
-    <value>Alan zorunludur.</value>
+    <value>{0} alanı zorunludur.</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
@@ -255,6 +255,41 @@
   <data isActive="false">
     <key>The value '{0}' is not valid for {1}.</key>
     <value>'{0}' değeri {1} için geçerli değil.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Min</key>
+    <value>Min</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The field {0} must be a string or array type with a minimum length of '{1}'.</key>
+    <value>Alan {0} en az '{1}' uzunluğunda bir dize veya dizi türü olmalıdır.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Submit</key>
+    <value>Gönder</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Max</key>
+    <value>Maksimum</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The field {0} must be a string or array type with a maximum length of '{1}'.</key>
+    <value>Alan {0} maksimum uzunluğu '{1}' olan bir dize veya dizi türü olmalıdır.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Range</key>
+    <value>Aralık</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The field {0} must be between {1} and {2}.</key>
+    <value>Alan {0} {1} ve {2} arasında olmalıdır.</value>
     <comment>Created by XLocalizer</comment>
   </data>
 </root>

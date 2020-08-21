@@ -6,27 +6,30 @@ using XmlLocalizationSample.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using XLocalizer.Translate.MyMemoryTranslate;
-using XLocalizer.Translate;
+using System.Globalization;
 using XLocalizer;
 using XLocalizer.Xml;
-using System.Globalization;
 using XLocalizer.Routing;
-using XmlLocalizationSample.LocalizationResources;
+using XLocalizer.Translate;
+using XLocalizer.Translate.MyMemoryTranslate;
 using XLocalizer.Translate.GoogleTranslate;
 using XLocalizer.Translate.SystranTranslate;
 using XLocalizer.Translate.YandexTranslate;
+using XmlLocalizationSample.LocalizationResources;
+using System;
 
 namespace XmlLocalizationSample
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IConfiguration configuration, IWebHostEnvironment env)
         {
             Configuration = configuration;
+            _env = env;
         }
 
         public IConfiguration Configuration { get; }
+        private readonly IWebHostEnvironment _env;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -84,9 +87,9 @@ namespace XmlLocalizationSample
                     ops.AutoTranslate = true;
 
                     // Recommendation: 
-                    // To avoid caching temporary values that are subject to change;
-                    // Keep caching off during development.
-                    ops.UseExpressMemoryCache = false; 
+                    // Keep caching off during development to avoid caching temporary values that are subject to change
+                    if (_env.IsDevelopment())
+                        ops.UseExpressMemoryCache = false; 
                 });
         }
 
@@ -112,7 +115,10 @@ namespace XmlLocalizationSample
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            // Use request localization middleware
             app.UseRequestLocalization();
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
