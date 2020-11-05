@@ -43,12 +43,12 @@ namespace DBLocalizationSample.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [ExRequired]
+            [Required]
             [EmailAddress]
             [Display(Name ="Email")]
             public string Email { get; set; }
 
-            [ExRequired]
+            [Required]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }

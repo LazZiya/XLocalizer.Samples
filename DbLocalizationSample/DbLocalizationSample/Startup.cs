@@ -1,12 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using DBLocalizationSample.Data;
 using Microsoft.Extensions.Configuration;
@@ -16,7 +10,6 @@ using XLocalizer.Translate.MyMemoryTranslate;
 using XLocalizer.Translate;
 using System.Globalization;
 using XLocalizer.Routing;
-using XLocalizer;
 using XLocalizer.DB;
 using XLocalizer.Translate.YandexTranslate;
 using XLocalizer.Translate.GoogleTranslate;
@@ -38,6 +31,8 @@ namespace DBLocalizationSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")),
@@ -69,9 +64,7 @@ namespace DBLocalizationSample
                 {
                     ops.AutoAddKeys = true;
                     ops.AutoTranslate = true;
-
-                    if(_env.IsDevelopment())
-                        ops.UseExpressMemoryCache = false;
+                    ops.UseExpressMemoryCache = !_env.IsDevelopment();
                 });
         }
 
@@ -81,7 +74,6 @@ namespace DBLocalizationSample
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {

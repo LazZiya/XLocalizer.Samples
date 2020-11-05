@@ -6,9 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="XLocalizer" Version="1.0.0-preview4" />
-    <PackageReference Include="XLocalizer.Translate" Version="1.0.0-preview3" />
-    <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-preview2" />
+    <PackageReference Include="XLocalizer" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-rc.1" />
   </ItemGroup>
 
 </Project>

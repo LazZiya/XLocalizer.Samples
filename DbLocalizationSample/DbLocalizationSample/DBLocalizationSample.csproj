@@ -11,24 +11,24 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="LazZiya.TagHelpers" Version="5.0.0-preview2" />
-    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.0-preview.8.20414.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0-preview.8.20414.8" />
-    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.0-preview.8.20414.8" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-preview.8.20407.4" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-preview.8.20407.4">
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="5.0.0-rc.2.20475.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0-rc.2.20475.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.0-rc.2.20475.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-rc.2.20475.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.0-rc.2.20475.6">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-preview.8.20419.1" />
-    <PackageReference Include="XLocalizer" Version="1.0.0-preview4" />
-    <PackageReference Include="XLocalizer.DB" Version="1.0.0-preview3" />
-    <PackageReference Include="XLocalizer.DB.UI" Version="1.0.0-preview2" />
-    <PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0-preview2" />
-    <PackageReference Include="XLocalizer.Translate.GoogleTranslate" Version="1.0.0-preview2" />
-    <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-preview2" />
-    <PackageReference Include="XLocalizer.Translate.SystranTranslate" Version="1.0.0-preview2" />
-    <PackageReference Include="XLocalizer.Translate.YandexTranslate" Version="1.0.0-preview2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0-rc.2.20473.1" />
+    <PackageReference Include="LazZiya.TagHelpers" Version="5.0.0-rc.1" />
+    <PackageReference Include="XLocalizer" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.DB" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.DB.UI" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate.GoogleTranslate" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate.SystranTranslate" Version="1.0.0-rc.1" />
+    <PackageReference Include="XLocalizer.Translate.YandexTranslate" Version="1.0.0-rc.1" />
   </ItemGroup>
 
   <ItemGroup>

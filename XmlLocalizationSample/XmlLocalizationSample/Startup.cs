@@ -34,6 +34,8 @@ namespace XmlLocalizationSample
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDatabaseDeveloperPageExceptionFilter();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
@@ -42,7 +44,7 @@ namespace XmlLocalizationSample
 
             services.Configure<RequestLocalizationOptions>(ops =>
             {
-                var cultures = new CultureInfo[] { new CultureInfo("en"), new CultureInfo("tr"), new CultureInfo("ar") };
+                var cultures = new CultureInfo[] { new CultureInfo("en"), new CultureInfo("tr"), new CultureInfo("ar"), new CultureInfo("de") };
                 ops.SupportedCultures = cultures;
                 ops.SupportedUICultures = cultures;
                 ops.DefaultRequestCulture = new Microsoft.AspNetCore.Localization.RequestCulture("en");
@@ -75,31 +77,15 @@ namespace XmlLocalizationSample
 
                 // Add XLocalization with a default resource <LocSource>
                 // and specify a service for handling translation requests
-                .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
-                {
-                    ops.ResourcesPath = "LocalizationResources";
-                    ops.AutoAddKeys = true;
-
-                    // Recommendation:
-                    // To avoid extra process power/time/cost required by online translation;
-                    // Enable auto translate option after fixing texts inside the application.
-                    // + enable AutoAddKeys with AutoTranslate.
-                    ops.AutoTranslate = true;
-
-                    // Recommendation: 
-                    // Keep caching off during development to avoid caching temporary values that are subject to change
-                    if (_env.IsDevelopment())
-                        ops.UseExpressMemoryCache = false; 
-                });
+                .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops => Configuration.GetSection("XLocalizerOptions").Bind(ops));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider serviceProvider)
         {
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {
@@ -112,7 +98,7 @@ namespace XmlLocalizationSample
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            
             app.UseAuthentication();
             app.UseAuthorization();
 

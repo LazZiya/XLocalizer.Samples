@@ -50,20 +50,20 @@ namespace DBLocalizationSample.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [ExRequired]
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
             [Required]
-            [ExStringLength(100, MinimumLength = 6)]
+            [StringLength(100, MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [ExCompare("Password")]
+            [Compare("Password")]
             public string ConfirmPassword { get; set; }
         }
 

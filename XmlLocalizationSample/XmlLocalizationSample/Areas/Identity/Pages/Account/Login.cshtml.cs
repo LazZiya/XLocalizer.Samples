@@ -43,7 +43,7 @@ namespace XmlLocalizationSample.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [ExRequired]
+            [Required]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }

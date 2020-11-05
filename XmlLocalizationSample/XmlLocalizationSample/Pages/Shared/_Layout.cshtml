@@ -24,17 +24,17 @@
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index" localize-content>Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index" asp-route-culture="@CultureInfo.CurrentCulture.Name" localize-content>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" localize-content>Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" asp-route-culture="@CultureInfo.CurrentCulture.Name" localize-content>Privacy</a>
                         </li>
                         <li class="nav-item">
                             @{ var args = new object[] { "ModelBinding" }; }
-                            <a class="nav-link text-dark" asp-area="" asp-page="/ModelBindingTest" localize-args="args">Localized {0} Errors</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ModelBindingTest" asp-route-culture="@CultureInfo.CurrentCulture.Name" localize-args="args">Localized {0} Errors</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Export" localize-content>Export Resources</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Export" asp-route-culture="@CultureInfo.CurrentCulture.Name" localize-content>Export Resources</a>
                         </li>
                     </ul>
                 </div>
@@ -50,7 +50,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - XLocalizer XML Sample - <a asp-area="" asp-page="/Privacy" localize-content>Privacy</a>
+            &copy; 2020 - XLocalizer XML Sample - <a asp-area="" asp-page="/Privacy" asp-route-culture="@CultureInfo.CurrentCulture.Name" localize-content>Privacy</a>
         </div>
     </footer>
 

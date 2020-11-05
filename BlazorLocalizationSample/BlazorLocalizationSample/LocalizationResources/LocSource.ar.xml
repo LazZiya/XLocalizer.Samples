@@ -152,4 +152,14 @@
     <value>لطيف</value>
     <comment>Created by XLocalizer</comment>
   </data>
+  <data isActive="false">
+    <key>Freezing</key>
+    <value>تجميد، تجمد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Chilly</key>
+    <value>بارِد ; بارِدَة ; فاتِر ; قارّ ; قارّة ; مَقْرُور ; مُبَرّد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
 </root>

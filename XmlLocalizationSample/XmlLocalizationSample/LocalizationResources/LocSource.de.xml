@@ -29,72 +29,47 @@
   </xsd:schema>
   <data isActive="false">
     <key>Welcome</key>
-    <value>Hoşgeldiniz</value>
+    <value>Wilkommen</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>&lt;p&gt;Learn about &lt;a href="{0}"&gt; building Web apps with ASP.NET Core&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Learn about &lt;a href="{1}"&gt; XLocalizer for ASP.NET Core&lt;/a&gt;.&lt;/p&gt;</key>
-    <value>&lt;p&gt; &lt;a href="{0}"&gt;ASP.NET Core ile Web uygulamaları oluşturma&lt;/a&gt; hakkında bilgi edinin. &lt;/p&gt;&lt;p&gt; &lt;a href="{1}"&gt;ASP.NET Core için XLocalizer&lt;/a&gt; hakkında bilgi edinin. &lt;/p&gt;</value>
+    <value>&lt;p&gt;Erfahren Sie mehr über das Erstellen von &lt;a href="{0}"&gt;Webanwendungen mit ASP.NET Core&lt;/a&gt; .&lt;/p&gt;&lt;p&gt; Erfahren Sie mehr über &lt;a href="{1}"&gt;XLocalizer für ASP.NET Core&lt;/a&gt; .&lt;/p&gt;</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Home page</key>
-    <value>Ana Sayfa</value>
+    <value>Home Seite</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Register</key>
-    <value>Kayıt Ol</value>
+    <value>Registrieren</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Login</key>
-    <value>Oturum aç</value>
+    <value>Anmelden</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Home</key>
-    <value>Anasayfa</value>
+    <value>Startseite</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Privacy</key>
-    <value>Gizlilik</value>
+    <value>Datenschutz</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Localized {0} Errors</key>
-    <value>Yerelleştirilmiş {0} Hataları</value>
+    <value>Lokalisierte {0} Fehler</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
     <key>Export Resources</key>
-    <value>Kaynakları Dışa Aktar</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>To see localized {0} errors run below steps: &lt;ul&gt; &lt;li&gt;Submit the form without typing any value.&lt;/li&gt; &lt;li&gt;Submit the form with a string value, e.g.: "A".&lt;/li&gt; &lt;li&gt;Submit the form with a number.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Read more about &lt;a href="{1}"&gt;{0} in Asp.Net Core&lt;/a&gt;&lt;/p&gt;</key>
-    <value>Yerelleştirilmiş {0} hatalarının aşağıdaki adımların altında koşturüldünden görmek için: &amp;lt;ul&amp;gt;&amp;lt;li&amp;gt;Herhangi bir değer yazmadan formu gönderin.&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Formu bir dize değeri yle gönderin, örneğin: "A".&amp;lt;/li&amp;gt;&amp;lt;li&amp;gt;Formu bir numara ile gönderin.&amp;lt;/li&amp;gt;&amp;lt;/ul&amp;gt;&amp;lt;p&amp;gt;{0} hakkında daha fazla bilgi &amp;lt;a href="{1}"&amp;gt;Asp.Net Core&amp;lt;/a&amp;gt;&amp;lt;/p&amp;gt;</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>What is your age?</key>
-    <value>Kaç yaşındasınız?</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>Age</key>
-    <value>Çağ</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>OK</key>
-    <value>Tamam</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>Model Binding Errors</key>
-    <value>Model Bağlama Hataları</value>
+    <value>Ressource exportieren</value>
     <comment>Created by XLocalizer</comment>
   </data>
 </root>
