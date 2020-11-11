@@ -28,13 +28,8 @@
     </xsd:element>
   </xsd:schema>
   <data isActive="false">
-    <key>Welcome</key>
-    <value>مرحبا</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
     <key>&lt;p&gt;Learn about &lt;a href="{0}"&gt; building Web apps with ASP.NET Core&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Learn about &lt;a href="{1}"&gt; XLocalizer for ASP.NET Core&lt;/a&gt;.&lt;/p&gt;</key>
-    <value>&amp;lt;p&amp;gt;التعرف على &amp;lt;a href="{0}"&amp;gt; إنشاء تطبيقات ويب باستخدام ASP.NET الأساسية&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;&amp;lt;p&amp;gt;تعرف على &amp;lt;a href="{1}"&amp;gt; XLocalizer ASP.NET الأساسية&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;</value>
+    <value>&lt;p&gt;التعرف على &lt;a href="{0}"&gt; إنشاء تطبيقات ويب باستخدام ASP.NET الأساسية&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;تعرف على &lt;a href="{1}"&gt; XLocalizer ASP.NET الأساسية&lt;/a&gt;.&lt;/p&gt;</value>
     <comment>Created by XLocalizer</comment>
   </data>
   <data isActive="false">
@@ -70,6 +65,71 @@
   <data isActive="false">
     <key>Export Resources</key>
     <value>تصدير الموارد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Welcome</key>
+    <value>مرحبا</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Log in</key>
+    <value>تسجيل الدخول</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use a local account to log in.</key>
+    <value>استخدم حساب محلي لتسجيل الدخول.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Email</key>
+    <value>البريد الإلكتروني</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is required.</key>
+    <value>هذا الحقل مطلوب.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is not a valid e-mail address.</key>
+    <value>الحقل {0} ليس عنوان بريد إلكتروني صالحًا.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Password</key>
+    <value>كلمة المرور</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Remember me?</key>
+    <value>تذکرني؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Forgot your password?</key>
+    <value>نسيت كلمة المرور؟</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Register as a new user</key>
+    <value>تسجيل مستخدم جديد</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Resend email confirmation</key>
+    <value>إعادة إرسال تأكيد البريد الإلكتروني</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use another service to log in.</key>
+    <value>استخدم خدمة أخرى لتسجيل الدخول.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>There are no external authentication services configured. See &lt;a href="{0}"&gt; this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services.</key>
+    <value>لا توجد خدمات مصادقة خارجية تم تكوينها. راجع &lt;a href="{0}"&gt; هذه المقالة&lt;/a&gt; للحصول على تفاصيل حول إعداد هذا التطبيق ASP.NET لدعم تسجيل الدخول عبر الخدمات الخارجية.</value>
     <comment>Created by XLocalizer</comment>
   </data>
 </root>

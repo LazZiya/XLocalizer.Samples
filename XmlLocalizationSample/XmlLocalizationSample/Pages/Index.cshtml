@@ -12,3 +12,55 @@
         <p>Learn about <a href="{1}"> XLocalizer for ASP.NET Core</a>.</p>
     </localize>
 </div>
+
+<div class="alert alert-info">
+    <h5 class="alert-heading" localize-content>
+        How to enable online translation support
+    </h5>
+    <p localize-args="@(new object[] { "https://rapidapi.com/translated/api/mymemory-translation-memory" })">
+        This sample is using <a href="{0}" target="_blank">MyMemory Translate service provided by RapidAPI</a>. Please follow the below steps to enable the translation service:
+    </p>
+    <ol>
+        <li localize-args="@(new object[] { "https://rapidapi.com/developer/apps" })">
+            Create an app at <a href="{0}" target="_blank">RapidApi</a> and copy the relevant API key
+        </li>
+        <li>
+            Right click on the project name and select "Manage User Secrets"
+        </li>
+        <li>
+            <localize>Past the API key to the file as below:</localize>
+            <pre>
+<code class="json" dir="ltr" style="text-align:left">{
+  "XLocalizer.Translate": {
+    "RapidApiKey": "...xxx...yyy...zzz...",
+  }
+}
+</code>
+</pre>
+        </li>
+        <li>
+            <localize>Open <code>startup.cs</code> file and set <code>AutoTranslate</code> to <code>true</code> in <code>XLocalizerOptions</code>:</localize>
+            <pre>
+<code class="csharp" dir="ltr" style="text-align:left">services.AddRazorPages()
+    .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
+    {
+        ops.ResourcesPath = "LocalizationResources";
+        ops.AutoAddKeys = true;
+        ops.AutoTranslate = true;
+        ops.UseExpressMemoryCache = true;
+    });
+</code>
+</pre>
+        </li>
+        <li localize-content>Build, run and enjoy the app :)</li>
+    </ol>
+</div>
+<p class="text-muted small" localize-args="@(new object[] { "https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services.md" })">
+    See <a href="{0}" target="_blank">XLocalizer Docs</a> for all available translation services.
+</p>
+
+@section Scripts{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.3.2/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+}

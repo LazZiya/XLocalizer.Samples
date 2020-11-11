@@ -62,8 +62,8 @@ namespace DBLocalizationSample
                 .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); })
                 .AddXDbLocalizer<ApplicationDbContext, MyMemoryTranslateService>(ops =>
                 {
-                    ops.AutoAddKeys = true;
-                    ops.AutoTranslate = true;
+                    ops.AutoAddKeys = false;
+                    ops.AutoTranslate = false;
                     ops.UseExpressMemoryCache = !_env.IsDevelopment();
                 });
         }

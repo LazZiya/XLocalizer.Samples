@@ -56,10 +56,10 @@ namespace XmlLocalizationSample
             // Optional: To enable online translation register one or more translation services.
             // Then add API Keys to user secrets file.
             // For more details see: http://docs.ziyad.info/XLocalizer/translate-services.md
-            services.AddHttpClient<ITranslator, YandexTranslateService>();
+            // services.AddHttpClient<ITranslator, YandexTranslateService>();
+            // services.AddHttpClient<ITranslator, GoogleTranslateService>();
+            // services.AddHttpClient<ITranslator, SystranTranslateService>();
             services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
-            services.AddHttpClient<ITranslator, GoogleTranslateService>();
-            services.AddHttpClient<ITranslator, SystranTranslateService>();
 
             //-----------------
             // Recommendation: 
@@ -77,7 +77,13 @@ namespace XmlLocalizationSample
 
                 // Add XLocalization with a default resource <LocSource>
                 // and specify a service for handling translation requests
-                .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops => Configuration.GetSection("XLocalizerOptions").Bind(ops));
+                .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
+                {
+                    ops.ResourcesPath = "LocalizationResources";
+                    ops.AutoAddKeys = false;
+                    ops.AutoTranslate = false;
+                    ops.UseExpressMemoryCache = false;
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
