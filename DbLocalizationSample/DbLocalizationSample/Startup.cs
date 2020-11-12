@@ -19,14 +19,12 @@ namespace DBLocalizationSample
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration, IWebHostEnvironment env)
+        public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
-            _env = env;
         }
 
         public IConfiguration Configuration { get; }
-        private readonly IWebHostEnvironment _env;
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -52,19 +50,24 @@ namespace DBLocalizationSample
 
             // Optional: To enable online translation register one or more translation services.
             // Then add API Keys to user secrets file.
-            // For more details see: http://docs.ziyad.info/XLocalizer/translate-services.md
-            services.AddHttpClient<ITranslator, YandexTranslateService>();
+            // For more details see: https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services.md
+            // uncomment the services that you want to use for manually translation
             services.AddHttpClient<ITranslator, MyMemoryTranslateService>();
-            services.AddHttpClient<ITranslator, GoogleTranslateService>();
-            services.AddHttpClient<ITranslator, SystranTranslateService>();
+            //services.AddHttpClient<ITranslator, MyMemoryTranslateServiceRapidApi>();
+            //services.AddHttpClient<ITranslator, GoogleTranslateService>();
+            //services.AddHttpClient<ITranslator, GoogleTranslateServiceRapidApi>();
+            //services.AddHttpClient<ITranslator, MicrosoftTranslateService>();
+            //services.AddHttpClient<ITranslator, MicrosoftTranslateServiceRapidApi>();
+            //services.AddHttpClient<ITranslator, SystranTranslateServiceRapidApi>();
+            //services.AddHttpClient<ITranslator, YandexTranslateService>();
 
             services.AddRazorPages()
                 .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); })
                 .AddXDbLocalizer<ApplicationDbContext, MyMemoryTranslateService>(ops =>
                 {
-                    ops.AutoAddKeys = false;
-                    ops.AutoTranslate = false;
-                    ops.UseExpressMemoryCache = !_env.IsDevelopment();
+                    ops.AutoAddKeys = true;
+                    ops.AutoTranslate = true;
+                    ops.UseExpressMemoryCache = true;
                 });
         }
 

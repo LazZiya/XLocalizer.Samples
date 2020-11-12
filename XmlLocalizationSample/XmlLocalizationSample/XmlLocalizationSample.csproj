@@ -15,14 +15,11 @@
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
 		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
-		<PackageReference Include="LazZiya.TagHelpers" Version="5.0.0-rc.1" />
-		<PackageReference Include="XLocalizer" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.Translate" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.Translate.GoogleTranslate" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.Translate.SystranTranslate" Version="1.0.0-rc.1" />
-		<PackageReference Include="XLocalizer.Translate.YandexTranslate" Version="1.0.0-rc.1" />
+		<PackageReference Include="LazZiya.TagHelpers" Version="5.0.0" />
+		<PackageReference Include="XLocalizer" Version="1.0.0" />
+		<PackageReference Include="XLocalizer.TagHelpers" Version="1.0.0" />
+		<PackageReference Include="XLocalizer.Translate" Version="1.0.0" />
+		<PackageReference Include="XLocalizer.Translate.MyMemoryTranslate" Version="1.0.0" />
 	</ItemGroup>
 
 </Project>

@@ -162,4 +162,39 @@
     <value>بارِد ; بارِدَة ; فاتِر ; قارّ ; قارّة ; مَقْرُور ; مُبَرّد</value>
     <comment>Created by XLocalizer</comment>
   </data>
+  <data isActive="false">
+    <key>This sample is using</key>
+    <value>هذه العينة تستخدم</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below.</key>
+    <value>يوفر استخدامًا مجانيًا محدودًا مجهول الهوية. لزيادة الاستخدام اليومي المجاني ، يمكنك تقديم عنوان بريد إلكتروني صالح ومفتاح كما هو موضح أدناه.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Create a key using</key>
+    <value>قم بإنشاء مفتاح باستخدام</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Add the key and your email address to the user secrets or appsettings file as below:</key>
+    <value>أضف المفتاح وعنوان بريدك الإلكتروني إلى ملف أسرار المستخدم أو ملف إعدادات التطبيقات على النحو التالي:</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Build, run and enjoy the localization :)</key>
+    <value>بناء وتشغيل والتمتع الترجمة :)</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>For more details about translation servies visit:</key>
+    <value>لمزيد من التفاصيل حول خدمات الترجمة ، تفضل بزيارة:</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>IMPORTANT NOTICE</key>
+    <value>ملاحظة هامة</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
 </root>

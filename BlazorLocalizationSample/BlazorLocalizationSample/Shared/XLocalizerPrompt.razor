@@ -5,46 +5,32 @@
 
 <div class="alert alert-info">
     <h5 class="alert-heading">
-        @_loc["How to enable online translation support"]
+        @_loc["IMPORTANT NOTICE"]
     </h5>
     <p>
-        @_loc["This sample is using"] <a href="https://rapidapi.com/translated/api/mymemory-translation-memory" target="_blank">@_loc["MyMemory Translate service provided by RapidAPI"]</a>. @_loc["Please follow the below steps to enable the translation service:"]
+        @_loc["This sample is using"] <a href="https://mymemory.translated.net/" target="_blank">MyMemory Translate service</a>, @_loc["it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below."]
     </p>
     <ol>
         <li>
-            @_loc["Create an app at"] <a href="https://rapidapi.com/developer/apps" target="_blank">RapidApi</a>, @_loc["and copy the relevant API key"]
+            @_loc["Create a key using"] <a href="https://mymemory.translated.net/doc/keygen.php" target="_blank">MyMemory API Key Generator</a>.
         </li>
         <li>
-            @_loc["Right click on the project name and select \"Manage User Secrets\""]
-        </li>
-        <li>
-            @_loc["Past the API key to the file as below:"]
+            @_loc["Add the key and your email address to the user secrets or appsettings file as below:"]
             <pre>
 <code class="json" dir="ltr" style="text-align:left">{
   "XLocalizer.Translate": {
-    "RapidApiKey": "...xxx...yyy...zzz...",
+    "MyMemory": {
+      "Email": "...",
+      "Key": "..."
+    }
   }
 }
 </code>
 </pre>
         </li>
-        <li>
-            @_loc["Open startup.cs file and set AutoTranslate to true in XLocalizerOptions:"]
-            <pre>
-<code class="csharp" dir="ltr" style="text-align:left">services.AddRazorPages()
-    .AddXLocalizer&lt;MyMemoryTranslateService&gt;(ops =>
-    {
-        ops.ResourcesPath = "LocalizationResources";
-        ops.AutoAddKeys = true;
-        ops.AutoTranslate = true;
-        ops.UseExpressMemoryCache = true;
-    });
-</code>
-</pre>
-        </li>
-        <li>@_loc["Build, run and enjoy the app :)"]</li>
+        <li>@_loc["Build, run and enjoy the localization :)"]</li>
     </ol>
 </div>
 <p class="text-muted small">
-    @_loc["See"] <a href="https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services.md" target="_blank">XLocalizer Docs</a> @_loc["for all available translation services."]
+    @_loc["For more details about translation servies visit:"] <a href="https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services.md" target="_blank">XLocalizer Docs</a>.
 </p>

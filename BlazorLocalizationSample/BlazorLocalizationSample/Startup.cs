@@ -42,9 +42,9 @@ namespace BlazorLocalizationSample
                 .AddXLocalizer<LocSource, MyMemoryTranslateService>(ops =>
                 {
                     ops.ResourcesPath = "LocalizationResources";
-                    ops.AutoAddKeys = false;
-                    ops.AutoTranslate = false;
-                    ops.UseExpressMemoryCache = false;
+                    ops.AutoAddKeys = true;
+                    ops.AutoTranslate = true;
+                    ops.UseExpressMemoryCache = true;
                 });
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
