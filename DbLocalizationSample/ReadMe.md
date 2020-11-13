@@ -1,6 +1,6 @@
 # Asp.Net Core - DB Localization Sample
 
-This project demonstrates Asp.Net Core localization using [XLocalizer](https://github.com/LazZiya/XLocalizer) and database as a source. XLocalizer is a nuget package for locailzing Asp.Net Core web application, and it is powered by online translation and auto resource creating.
+This project demonstrates Asp.Net Core localization using [XLocalizer](https://github.com/LazZiya/XLocalizer) and database as a source. XLocalizer is a nuget package for localizing Asp.Net Core web application, and it is powered by online translation and auto resource creating.
 
 > Online translation service offers a free daily usage that can be increased by providing API key
 
