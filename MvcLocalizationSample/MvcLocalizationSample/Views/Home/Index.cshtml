@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    var args = new object[] { "https://docs.microsoft.com/aspnet/core", "https://docs.ziyad.info" };
+}
+
+<div class="text-center">
+    <h1 class="display-4" localize-content>Welcome</h1>
+    <localize localize-args="args">
+        <p>Learn about <a href="{0}"> building Web apps with ASP.NET Core</a>.</p>
+        <p>Learn about <a href="{1}"> XLocalizer for ASP.NET Core</a>.</p>
+    </localize>
+</div>
+
+<div class="alert alert-info">
+    <h5 class="alert-heading" localize-content>
+        IMPORTANT NOTICE
+    </h5>
+    <p localize-args="@(new object[] { "https://mymemory.translated.net/" })">
+        This sample is using <a href="{0}" target="_blank">MyMemory Translate service</a>, it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below.
+    </p>
+    <ol>
+        <li localize-args="@(new object[] { "https://mymemory.translated.net/doc/keygen.php" })">
+            Create a key using <a href="{0}" target="_blank">MyMemory API Key Generator</a>.
+        </li>
+        <li>
+            <localize>Add the key and your email address to the user secrets or appsettings file as below:</localize>
+            <pre>
+<code class="json" dir="ltr" style="text-align:left">{
+  "XLocalizer.Translate": {
+    "MyMemory": {
+      "Email": "...",
+      "Key": "..."
+    }
+  }
+}
+</code>
+</pre>
+        </li>
+        <li localize-content>Build, run and enjoy the localization :)</li>
+    </ol>
+</div>
+<p class="text-muted small" localize-args="@(new object[] { "https://docs.ziyad.info/en/XLocalizer/v1.0/translate-services.md" })">
+    See <a href="{0}" target="_blank">XLocalizer Docs</a> for all available translation services.
+</p>

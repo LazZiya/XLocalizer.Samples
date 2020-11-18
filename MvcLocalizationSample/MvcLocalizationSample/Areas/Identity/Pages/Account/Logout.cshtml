@@ -1,0 +1,21 @@
+﻿@page
+@model LogoutModel
+@{
+    ViewData["Title"] = "Log out";
+}
+
+<header>
+    <h1 localize-content>@ViewData["Title"]</h1>
+    @{
+        if (User.Identity.IsAuthenticated)
+        {
+            <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-culture="@CultureInfo.CurrentCulture.Name" asp-route-returnUrl="@Url.Page("/", new { area = "", culture=CultureInfo.CurrentCulture.Name })" method="post">
+                <button type="submit" class="nav-link btn btn-link text-dark" localize-content>Click here to Logout</button>
+            </form>
+        }
+        else
+        {
+            <p localize-content>You have successfully logged out of the application.</p>
+        }
+    }
+</header>
