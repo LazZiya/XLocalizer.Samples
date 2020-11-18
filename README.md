@@ -1,5 +1,6 @@
 # XLocalizer.Samples
-Sample projects to demonstrate [XLocalizer](https://github.com/LazZiya/XLocalizer) functionalities.
+Sample projects to demonstrate localizing Asp.Net Core web applications using [XLocalizer](https://github.com/LazZiya/XLocalizer).
 
-### Before running the samples;
-A few steps is required to activate online translation services. For more details visit [DOCS.Ziyad.info](http://docs.ziyad.info)
+XLocalizer is powered by online translation and auto resource creating, so it makes localizing web applications a kind of breez :)
+
+### For more details visit [DOCS.Ziyad.info](https://docs.ziyad.info)
