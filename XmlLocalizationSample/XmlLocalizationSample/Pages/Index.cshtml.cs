@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 
 namespace XmlLocalizationSample.Pages
@@ -11,6 +14,8 @@ namespace XmlLocalizationSample.Pages
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public IEnumerable<SelectListItem> Belongies { get; set; }
+
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
@@ -18,6 +23,14 @@ namespace XmlLocalizationSample.Pages
 
         public void OnGet()
         {
+            Belongies = new List<SelectListItem>()
+            {
+                new SelectListItem{ Text = "Home" },
+                new SelectListItem{ Text = "Welcome"},
+                new SelectListItem{ Text = "Login"},
+                new SelectListItem{ Text = "Car"},
+                new SelectListItem{ Text = "Business"}
+            };
 
         }
 

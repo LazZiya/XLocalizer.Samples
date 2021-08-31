@@ -97,4 +97,9 @@
     <value>Model Bağlama Hataları</value>
     <comment>Created by XLocalizer</comment>
   </data>
+  <data isActive="false">
+    <key>IMPORTANT NOTICE</key>
+    <value>ÖNEMLİ NOTLAR</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
 </root>
