@@ -72,34 +72,4 @@
     <value>Ressource exportieren</value>
     <comment>Created by XLocalizer</comment>
   </data>
-  <data isActive="false">
-    <key>IMPORTANT NOTICE</key>
-    <value>WICHTIGER HINWEIS</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>This sample is using &lt;a href="{0}" target="_blank"&gt;MyMemory Translate service&lt;/a&gt;, it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below.</key>
-    <value>Dieses Beispiel verwendet den &lt;a href="{0}" target="_blank"&gt;MyMemory Translate-Dienst&lt;/a&gt; und bietet eine eingeschränkte kostenlose anonyme Nutzung. Um den kostenlosen täglichen Gebrauch zu erhöhen, können Sie eine gültige E-Mail-Adresse und einen Schlüssel wie unten beschrieben angeben.</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>Create a key using &lt;a href="{0}" target="_blank"&gt;MyMemory API Key Generator&lt;/a&gt;.</key>
-    <value>Erstellen Sie einen Schlüssel mit dem &lt;a href="{0}" target="_blank"&gt;MyMemory API Key Generator&lt;/a&gt; .</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>Add the key and your email address to the user secrets or appsettings file as below:</key>
-    <value>Fügen Sie den Schlüssel und Ihre E-Mail-Adresse wie folgt der Datei mit den Benutzergeheimnissen oder der Appsettings-Datei hinzu:</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>Build, run and enjoy the localization :)</key>
-    <value>Erstellen, ausführen und genießen Sie die Lokalisierung :)</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
-  <data isActive="false">
-    <key>See &lt;a href="{0}" target="_blank"&gt;XLocalizer Docs&lt;/a&gt; for all available translation services.</key>
-    <value>Siehe &lt;a href="{0}" target="_blank"&gt;XLocalizer Docs&lt;/a&gt; für alle verfügbaren Übersetzungsdienste.</value>
-    <comment>Created by XLocalizer</comment>
-  </data>
 </root>
