@@ -97,4 +97,64 @@
     <value>Model Bağlama Hataları</value>
     <comment>Created by XLocalizer</comment>
   </data>
+  <data isActive="false">
+    <key>Email</key>
+    <value>E-posta</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Password</key>
+    <value>Şifre</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Log in</key>
+    <value>Hesabım</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use a local account to log in.</key>
+    <value>Giriş yapmak için yerel bir hesap kullanın.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is required.</key>
+    <value>Alan zorunludur.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>The {0} field is not a valid e-mail address.</key>
+    <value>{0} alanı geçerli bir e-posta adresi değil.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Remember me?</key>
+    <value>Beni Hatırla ?</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Forgot your password?</key>
+    <value>Şifrenizi mi unuttunuz?</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Register as a new user</key>
+    <value>Yeni bir kullanıcı olarak kaydolun</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Resend email confirmation</key>
+    <value>E-posta onayını tekrar gönder</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use another service to log in.</key>
+    <value>Oturum açmak için başka bir hizmet kullanın.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>There are no external authentication services configured. See &lt;a href="{0}"&gt; this article&lt;/a&gt; for details on setting up this ASP.NET application to support logging in via external services.</key>
+    <value>Yapılandırılmış harici kimlik doğrulama hizmeti yok. Bu ASP.NET uygulamasının harici hizmetler aracılığıyla oturum açmayı destekleyecek şekilde ayarlanmasıyla ilgili ayrıntılar için &lt;a href="{0}"&gt;bu makaleye&lt;/a&gt; bakın.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
 </root>

@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using XLocalizer.DataAnnotations;
+using Microsoft.Extensions.Localization;
 
 namespace XmlLocalizationSample.Areas.Identity.Pages.Account
 {
@@ -21,14 +22,17 @@ namespace XmlLocalizationSample.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IStringLocalizer _loc;
 
         public LoginModel(SignInManager<IdentityUser> signInManager,
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager,
+            IStringLocalizer localizer)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _loc;
         }
 
         [BindProperty]
@@ -101,7 +105,7 @@ namespace XmlLocalizationSample.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, _loc["Invalid login attempt."]);
                     return Page();
                 }
             }
