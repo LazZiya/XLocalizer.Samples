@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><localize>@ViewData["Title"]</localize> - XLocalizer.DB Sample</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="~/css/site.css" />
     @if (System.Globalization.CultureInfo.CurrentCulture.TextInfo.IsRightToLeft)
     {
@@ -21,26 +22,29 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    @{
+                        var culture = System.Globalization.CultureInfo.CurrentCulture.Name;
+                    }
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index" localize-content>Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index" asp-route-culture="@culture" localize-content>Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" localize-content>Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy" asp-route-culture="@culture" localize-content>Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/ModelBindingTest" localize-content>Model Binding</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/ModelBindingTest" asp-route-culture="@culture" localize-content>Model Binding</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="XLocalizer" asp-page="/Cultures/Index" localize-content>DB Cultures</a>
+                            <a class="nav-link text-dark" asp-area="XLocalizer" asp-page="/Cultures/Index" asp-route-culture="@culture" localize-content>DB Cultures</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="XLocalizer" asp-page="/Resources/Index" localize-content>DB Resources</a>
+                            <a class="nav-link text-dark" asp-area="XLocalizer" asp-page="/Resources/Index" asp-route-culture="@culture" localize-content>DB Resources</a>
                         </li>
                     </ul>
                 </div>
-                <language-nav cookie-handler-url="@Url.Page("/Index", "SetCultureCookie", new { area="", cltr="{0}", returnUrl="{1}" })"></language-nav>
+                <language-nav render-mode="Bootstrap5" cookie-handler-url="@Url.Page("/Index", "SetCultureCookie", new { area="", cltr="{0}", returnUrl="{1}" })"></language-nav>
             </div>
         </nav>
     </header>
@@ -52,13 +56,14 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2020 - XLocalizer.DB Sample - <a asp-area="" asp-page="/Privacy" localize-content>Privacy</a>
+            &copy; 2020 - XLocalizer.DB Sample - <a asp-area="" asp-page="/Privacy" asp-route-culture="@culture" localize-content>Privacy</a>
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

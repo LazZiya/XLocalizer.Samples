@@ -157,4 +157,44 @@
     <value>Yapılandırılmış harici kimlik doğrulama hizmeti yok. Bu ASP.NET uygulamasının harici hizmetler aracılığıyla oturum açmayı destekleyecek şekilde ayarlanmasıyla ilgili ayrıntılar için &lt;a href="{0}"&gt;bu makaleye&lt;/a&gt; bakın.</value>
     <comment>Created by XLocalizer</comment>
   </data>
+  <data isActive="false">
+    <key>IMPORTANT NOTICE</key>
+    <value>ÖNEMLİ NOTLAR</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>This sample is using &lt;a href="{0}" target="_blank"&gt;MyMemory Translate service&lt;/a&gt;, it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below.</key>
+    <value>Bu örnek &lt;a href="{0}" target="_blank"&gt;MyMemory Translate hizmetini&lt;/a&gt; kullanıyor, sınırlı bir ücretsiz anonim kullanım sunuyor. Ücretsiz günlük kullanımı artırmak için aşağıda açıklandığı gibi geçerli bir e - posta adresi ve bir anahtar sağlayabilirsiniz.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Create a key using &lt;a href="{0}" target="_blank"&gt;MyMemory API Key Generator&lt;/a&gt;.</key>
+    <value>&lt;a href="{0}" target="_blank"&gt;MyMemory API Anahtar Oluşturucu&lt;/a&gt; kullanarak bir anahtar oluşturun.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Add the key and your email address to the user secrets or appsettings file as below:</key>
+    <value>Anahtarı ve e - posta adresinizi aşağıdaki gibi kullanıcı sırlarına veya uygulama ayarlarına ekleyin:</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Build, run and enjoy the localization :)</key>
+    <value>Yerelleştirmeyi oluşturun, çalıştırın ve keyfini çıkarın:)</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>See &lt;a href="{0}" target="_blank"&gt;XLocalizer Docs&lt;/a&gt; for all available translation services.</key>
+    <value>Mevcut tüm çeviri hizmetleri için bkz. XLocalizer &lt;a href="{0}" target="_blank"&gt;Dokümanlar&lt;/a&gt;.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Privacy Policy</key>
+    <value>Gizlilik Politikası</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Use this page to detail your site's privacy policy.</key>
+    <value>Sitenizin gizlilik politikasını detaylandırmak için bu sayfayı kullanın.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
 </root>

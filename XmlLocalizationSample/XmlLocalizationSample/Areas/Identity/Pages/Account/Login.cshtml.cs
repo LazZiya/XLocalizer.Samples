@@ -32,7 +32,7 @@ namespace XmlLocalizationSample.Areas.Identity.Pages.Account
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
-            _loc;
+            _loc = localizer;
         }
 
         [BindProperty]

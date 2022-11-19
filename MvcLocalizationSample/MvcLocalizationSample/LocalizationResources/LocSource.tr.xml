@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root">
+      <xsd:complexType>
+        <xsd:sequence>
+          <xsd:element name="data" maxOccurs="unbounded" minOccurs="0">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="key">
+                  <xsd:complexType>
+                    <xsd:simpleContent>
+                      <xsd:extension base="xsd:string">
+                        <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+                      </xsd:extension>
+                    </xsd:simpleContent>
+                  </xsd:complexType>
+                </xsd:element>
+                <xsd:element type="xsd:string" name="value" />
+                <xsd:element type="xsd:string" name="comment" />
+              </xsd:sequence>
+              <xsd:attribute type="xsd:string" name="isActive" use="optional" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <data isActive="false">
+    <key>Welcome</key>
+    <value>Hoşgeldiniz</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>&lt;p&gt;Learn about &lt;a href="{0}"&gt; building Web apps with ASP.NET Core&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;Learn about &lt;a href="{1}"&gt; XLocalizer for ASP.NET Core&lt;/a&gt;.&lt;/p&gt;</key>
+    <value>&lt;p&gt;&lt;a href="{0}"&gt; ASP.NET Core ile Web uygulamaları oluşturma&lt;/a&gt; hakkında bilgi edinin.&lt;/p&gt; &lt;p&gt; &lt;a href="{1}"&gt; ASP.NET Core için XLocalizer&lt;/a&gt; hakkında bilgi edinin.&lt;/p&gt;</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>IMPORTANT NOTICE</key>
+    <value>ÖNEMLİ NOTLAR</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>This sample is using &lt;a href="{0}" target="_blank"&gt;MyMemory Translate service&lt;/a&gt;, it offers a limited free anonymous usage. To increase the free daily use you can provide a valid email address and a key as described below.</key>
+    <value>Bu örnek &lt;a href="{0}" target="_blank"&gt;MyMemory Translate hizmetini&lt;/a&gt; kullanıyor, sınırlı bir ücretsiz anonim kullanım sunuyor. Ücretsiz günlük kullanımı artırmak için aşağıda açıklandığı gibi geçerli bir e - posta adresi ve bir anahtar sağlayabilirsiniz.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Create a key using &lt;a href="{0}" target="_blank"&gt;MyMemory API Key Generator&lt;/a&gt;.</key>
+    <value>&lt;a href="{0}" target="_blank"&gt;MyMemory API Anahtar Oluşturucu&lt;/a&gt; kullanarak bir anahtar oluşturun.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Add the key and your email address to the user secrets or appsettings file as below:</key>
+    <value>Anahtarı ve e - posta adresinizi aşağıdaki gibi kullanıcı sırlarına veya uygulama ayarlarına ekleyin:</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Build, run and enjoy the localization :)</key>
+    <value>Yerelleştirmeyi oluşturun, çalıştırın ve keyfini çıkarın:)</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>See &lt;a href="{0}" target="_blank"&gt;XLocalizer Docs&lt;/a&gt; for all available translation services.</key>
+    <value>Mevcut tüm çeviri hizmetleri için bkz. XLocalizer &lt;a href="{0}" target="_blank"&gt;Dokümanlar&lt;/a&gt;.</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Home</key>
+    <value>Anasayfa</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Privacy</key>
+    <value>Gizlilik</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Register</key>
+    <value>S’inscrire</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+  <data isActive="false">
+    <key>Login</key>
+    <value>Connexion</value>
+    <comment>Created by XLocalizer</comment>
+  </data>
+</root>
