@@ -11,7 +11,6 @@ using XLocalizer.Translate;
 using System.Globalization;
 using XLocalizer.Routing;
 using XLocalizer.DB;
-using XLocalizer.Translate.YandexTranslate;
 using XLocalizer.Translate.GoogleTranslate;
 using XLocalizer.Translate.SystranTranslate;
 
@@ -31,13 +30,10 @@ namespace DBLocalizationSample
         {
             services.AddDatabaseDeveloperPageExceptionFilter();
 
-            services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")),
-                    ServiceLifetime.Transient,
-                    ServiceLifetime.Transient);
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContextFactory<XLocalizerDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("XLocalizerDbConnection")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
+
 
             services.Configure<RequestLocalizationOptions>(ops =>
             {
@@ -63,11 +59,11 @@ namespace DBLocalizationSample
 
             services.AddRazorPages()
                 .AddRazorPagesOptions(ops => { ops.Conventions.Insert(0, new RouteTemplateModelConventionRazorPages()); })
-                .AddXDbLocalizer<ApplicationDbContext, MyMemoryTranslateService>(ops =>
+                .AddXDbLocalizerFactory<XLocalizerDbContext, MyMemoryTranslateService>(ops =>
                 {
                     ops.AutoAddKeys = true;
                     ops.AutoTranslate = true;
-                    ops.UseExpressMemoryCache = true;
+                    ops.UseExpressMemoryCache = false;
                 });
         }
 
