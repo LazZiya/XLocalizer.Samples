@@ -7,7 +7,7 @@ using XLocalizer.DB.Models;
 
 namespace DBLocalizationSample.Data
 {
-    public class XLocalizerDbContext : IdentityDbContext
+    public class XLocalizerDbContext : DbContext
     {
         public XLocalizerDbContext(DbContextOptions<XLocalizerDbContext> options)
             : base(options)
