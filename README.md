@@ -3,4 +3,4 @@ Sample projects to demonstrate localizing Asp.Net Core web applications using [X
 
 XLocalizer is powered by online translation and auto resource creating, so it makes localizing web applications a kind of breez :)
 
-### For more details visit [DOCS.Ziyad.info](https://docs.ziyad.info)
+### For more details visit [DOCS.Ziya.info.tr](https://docs.ziya.info.tr)
