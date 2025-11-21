@@ -4,4 +4,4 @@ This project demonstrates Asp.Net Core localization using [XLocalizer](https://g
 
 > Online translation service offers a free daily usage that can be increased by providing API key
 
-### For more details visit: https://docs.ziyad.info
+### For more details visit: https://docs.ziya.info.tr
